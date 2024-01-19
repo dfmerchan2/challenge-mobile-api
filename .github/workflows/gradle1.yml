@@ -24,9 +24,6 @@ jobs:
       
     - name: Init gradle wrapper
       run: gradle wrapper
-      
-    - name: Build with Gradle
-      run: ./gradlew build
 
     - name: Run tests
       run: gradle test --tests "co.com.yape.backend.runner.*
