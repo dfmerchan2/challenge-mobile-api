@@ -1,4 +1,4 @@
-name: Java CI with Gradle
+name: YAPE - Java CI With Gradle
 
 on:
   push:

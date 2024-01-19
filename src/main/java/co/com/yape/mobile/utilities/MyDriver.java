@@ -20,8 +20,8 @@ public class MyDriver {
     @SneakyThrows
     public static AppiumDriver mobile() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "Pixel 3 API 30");
-        capabilities.setCapability("platformVersion", "11");
+        capabilities.setCapability("deviceName", "");
+        capabilities.setCapability("platformVersion", "");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("appActivity", "com.booking.startup.HomeActivity");
         capabilities.setCapability("appPackage", "com.booking");

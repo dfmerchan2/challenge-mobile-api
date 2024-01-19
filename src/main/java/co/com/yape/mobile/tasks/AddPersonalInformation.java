@@ -48,8 +48,7 @@ public class AddPersonalInformation implements Task {
                         .andIfSo(Enter.keyValues(user.getCity()).into(TXT_CITY)),
                 Clear.field(TXT_COUNTRY),
                 Enter.keyValues(user.getCountry()).into(TXT_COUNTRY),
-                Check.whether(TXT_CODE_POSTAL.resolveFor(actor).isVisible())
-                        .andIfSo(Enter.keyValues(user.getPhone()).into(TXT_PHONE)),
+                Enter.keyValues(user.getPhone()).into(TXT_PHONE),
                 Check.whether(user.getReasonTrip().equals(BUSINESS))
                         .andIfSo(Click.on(BTN_BUSINESS))
                         .otherwise(Click.on(BTN_LEISURE)),
