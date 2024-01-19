@@ -22,5 +22,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
+    - name: Compile Gradle
+      run: gradle build -x test
+    
     - name: Run tests
-      run: ./gradlew test --tests "co.com.yape.backend.runner.*"
+      run: gradle clean test --tests "co.com.yape.backend.runner.*" aggregate -i
