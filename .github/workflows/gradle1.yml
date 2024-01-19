@@ -22,11 +22,5 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    - name: Build with Gradle
-      run: gradle build
-      
-    - name: Init gradle wrapper
-      run: ./gradlew wrapper
-
     - name: Run tests
       run: ./gradlew test --tests "co.com.yape.backend.runner.*"
