@@ -20,6 +20,6 @@ public class Hook {
 
     @After
     public void afterScenario(){
-        MyDriver.getDriver().quit();
+        MyDriver.getDriverAppium().quit();
     }
 }

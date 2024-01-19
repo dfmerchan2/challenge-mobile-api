@@ -7,10 +7,10 @@ import lombok.AllArgsConstructor;
 public class ScreenSpecifications {
 
     public static int getWidthSizeScreen(int scrollSize) {
-        return MyDriver.getDriver().manage().window().getSize().getWidth() / scrollSize;
+        return MyDriver.getDriverAppium().manage().window().getSize().getWidth() / scrollSize;
     }
 
     public static int getHeightSizeScreen(int scrollSize) {
-        return MyDriver.getDriver().manage().window().getSize().getHeight() / scrollSize;
+        return MyDriver.getDriverAppium().manage().window().getSize().getHeight() / scrollSize;
     }
 }

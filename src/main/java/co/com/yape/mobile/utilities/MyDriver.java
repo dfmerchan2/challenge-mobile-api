@@ -13,7 +13,7 @@ public class MyDriver {
 
     private static AppiumDriver driver;
 
-    public static AppiumDriver getDriver() {
+    public static AppiumDriver getDriverAppium() {
         return driver;
     }
 
