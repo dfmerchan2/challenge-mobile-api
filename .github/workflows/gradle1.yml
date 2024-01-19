@@ -23,9 +23,7 @@ jobs:
         distribution: 'temurin'
       
     - name: Init gradle wrapper
-      run: |
-        chmod +x gradlew
-        ./gradlew wrapper
+      run: ./gradlew wrapper
 
     - name: Run tests
       run: ./gradlew test --tests "co.com.yape.backend.runner.*"
