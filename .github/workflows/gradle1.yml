@@ -26,4 +26,4 @@ jobs:
       run: gradle build -x test
     
     - name: Run tests
-      run: gradle test --tests "co.com.yape.backend.runner.*" aggregate -i
+      run: gradle clean test --tests "co.com.yape.backend.runner.*" aggregate -i
