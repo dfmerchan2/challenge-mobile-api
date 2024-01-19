@@ -23,4 +23,4 @@ jobs:
         distribution: 'temurin'
 
     - name: Run tests
-      run: ./gradlew test --tests "co.com.yape.backend.runner.*"
+      run: gradle test --tests "co.com.yape.backend.runner.*"
