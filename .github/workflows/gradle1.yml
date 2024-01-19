@@ -27,3 +27,9 @@ jobs:
     
     - name: Run tests
       run: gradle clean test --tests "co.com.yape.backend.runner.*" aggregate -i
+
+    - name: Archive Serenity reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: serenity-reports
+        path: target/site/serenity
